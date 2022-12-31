@@ -1,70 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		html {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>신삐의 공간</title>
+    <style>
+       @font-face {
+			font-family: 'GangwonEdu_OTFBoldA';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
 		}
-		.title {
-			color: red;
-			background-color: aqua;
-			font-size: 30px;
-			border-radius: 10px;
-			padding: 10px 15px;
-			margin: 10px 20px;
-		} 
-		.bg {
-			width: 360px;
-			background-image: url("https://pbs.twimg.com/media/FTwRkHkUcAA0nAn.jpg:large");
-			background-size: cover;
-			/* background-position: center; */
-		}
-		.bucket {
-			color: white;
-			width: 160px;
-			height: 160px;
-			background-size: cover;
-			background-position: center;
-		}
-		.img1 {
-			background-image: url("https://pbs.twimg.com/media/FTwRkHkUcAA0nAn.jpg:large");
-		}
-		.img2 {
-			background-image: url("https://m1.daumcdn.net/cfile275/image/99183D365B6BC0C52385D9");
-		}
-		.flex-row {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-		}
-		.wrap {
-			flex-wrap: wrap;
-		}
-		.center {
-			margin: 10px 10px;
+        * {
+            font-family: 'GangwonEdu_OTFBoldA';
+        }
+        html {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .title {
+            color: white;
+            background-color: palevioletred;
+            font-size: 30px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 10px 20px;
+        }
+        .bg {
+            width: 360px;
+            background-image : url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+            /*background-image: url("https://www.godpeople.com/img/cnts/thumb/8358/8358_5626776.png");*/
+            background-size: cover;
+            background-position: center;
+        }
+        .msg {
+            font-weight: bold;
+            font-size: 30px;
+            margin: 10px 20px;
+        }
+        .bucket {
+            color: whitesmoke;
+            width: 160px;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            font-weight: bold;
+            font-size: 23px;
+            text-align: center;
+            word-break: keep-all;
+        }
+        .img1 {
+            background-image: url("https://blog.kakaocdn.net/dn/AFzsZ/btqI088tZW3/HCqq10x0OG9SoMdG2Bo3YK/img.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .img2 {
+            background-image: url("https://cdn.imweb.me/upload/S201806045b14e127704de/83281fc6c7a86.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 8px;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .done::after {
+            content: "";
+            width: 70%;
+            height: 70%;
+            background-image: url("https://mblogthumb-phinf.pstatic.net/20160122_208/pinkgroove_1453435320960Eo7Rx_PNG/%C2%FC%C0%DF%C7%DF%BE%EE%BF%E407.png?type=w2");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+        }
+		.check1 {
+			font-size: 16px;
 		}
     </style>
+	<link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
-<body class="bg">
-	<h1 class="title">신삐의 신년계획</h1>
-	<p>2023년 목표</p>
-
-	<div class="flex-row wrap">
-		<div class="bucket center img1">건강한 식습관 갖기<br>-과자 줄이기</div>
-		<div class="bucket center img2">살빼기</div>
-		<div class="bucket center img1">한 달에 한 권 책읽기</div>
-		<div class="bucket center img2">운동 꾸준히 하기</div>
-		<div class="bucket center img1">신문읽기</div>
-		<div class="bucket center img2">일본어 jlpt N2따기</div>
-	</div>
-
+<body class="bg center">
+    <h1 class="title">신삐의 신년계획</h1>
+    <p class="msg">🌅 2023년 목표</p>
+    <div class="flex-row wrap">
+        <div class="bucket img1 center">날씬이 되기</div>
+        <div class="bucket img2 center">건강한 생활패턴 맞추기
+			<div class="check1">*과자먹는거 줄이기</div>
+			<br>*1시 전에 자기
+			<br>*국물 자제하기
+		</div>
+        <div class="bucket img2 center">독서하기
+			<br>*한 달에 한 권 책읽기
+		</div>
+        <div class="bucket img1 center">신문읽기</div>
+        <div class="bucket img1 center">영어회화공부하기</div>
+        <div class="bucket img2 center">경제공부하기</div>
+    </div>
 </body>
 </html>
